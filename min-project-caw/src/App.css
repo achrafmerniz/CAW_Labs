@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+}
+.main-container {
+  display: flex;
+}
+
+main {
+  padding: 10px;
+}
+
+.title {
+  font-size: 3rem;
+  display: grid;
+  place-items: center;
+  color: #3a3a3a;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #34495e;
+  color: white;
+  height: 100vh;
+  overflow-y: auto;
+  position: fixed;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.top_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  color: #ecf0f1;
+}
+.bars {
+  width: 30px;
+  cursor: pointer;
+}
+.hide {
+  display: none;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  height: 35px;
+  padding: 10px;
+}
+.search input {
+  border: none;
+  margin-left: 10px;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #34495e;
+  padding: 5px 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+.routes {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #ecf0f1;
+  gap: 10px;
+  padding: 8px 12px;
+  border-right: 4px solid transparent;
+  transition: 0.3s ease;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.link:hover {
+  background: #2ecc71;
+  color: white;
+  border-right: 4px solid #27ae60;
+}
+.active {
+  background: #2ecc71;
+}
+.link_text {
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+.menu {
+  display: flex;
+  color: white;
+  padding: 8px 12px;
+  border-right: 4px solid transparent;
+  transition: 0.3s ease;
+  justify-content: space-between;
+}
+.menu_item {
+  display: flex;
+  gap: 10px;
+}
+.menu_container {
+  display: flex;
+  flex-direction: column;
+}
+.menu_container .link {
+  padding-left: 20px;
+  border-bottom: #bdc3c7 0.5px solid;
+}
+.children {
+  width: calc(100% - 60px);
+  transition: 0.3s ease-out;
+  padding-left: 100px;
+}
+.children.expended {
+  width: calc(100% - 260px);
+  transition: 0.3s ease;
+  transform: translateX(200px);
+  padding-left: 60px;
+}
+
+.bars {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #ecf0f1;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icon:first-child {
+  font-size: 28px;
+  color: #ecf0f1;
+}
